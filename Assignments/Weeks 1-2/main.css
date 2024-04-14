@@ -1,0 +1,170 @@
+/* === Every Page === */
+
+@import url('https://fonts.googleapis.com/css2?family=Graduate&family=Lato&display=swap');
+
+body {                                           /* Element selector */
+  background-color: rgb(11, 11, 11);
+  color: rgb(255, 255, 255);
+  min-height: calc(100vh - 16px);
+  display: grid;                                 /* Grid */
+  grid-template-columns: 180px auto;
+  grid-template-rows: auto 40px;
+}
+
+header {
+  text-align: center;
+  font-family: "Graduate", serif;
+}
+                                                 /* Fonts */
+p, ul {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1rem;
+}
+
+.big-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.item {                                          /* Class selector */
+  background-color: rgb(26, 26, 26);
+  transition: background-color .3s;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: .1rem;
+  display: flex;                                 /* Flexbox */
+}
+
+.item:hover {                                    /* Pseudo-class selector */
+  background-color: rgb(44, 44, 44);
+  transition: background-color .3s;              /* Hover + Transition */
+}
+
+.item h2,
+.item h3,
+.item h4 {
+  font-family: "Graduate", serif;
+}
+
+main img {
+  margin: auto 10px;
+}
+
+#nav-list {                                      /* ID selector */
+  list-style: none;
+  padding: 5px;
+  text-align: center;
+}
+
+#nav-list li {
+  padding: 4px 0;
+}
+
+#nav-list a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: "Graduate", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: font-size .3s;
+}
+
+#nav-list a:hover {
+  text-decoration: underline;
+  font-size: 1.55rem;
+  transition: font-size .3s;                     /* Hover + Transition */
+}
+
+aside {
+  background-color: rgb(59, 59, 59);
+  border-radius: .5rem;
+  grid-column: 1;                                /* Grid Columns */
+  margin-bottom: 1rem;
+}
+
+main {
+  grid-column: 2;
+}
+
+footer {
+  grid-column: 1 / span 2;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-container a {
+  margin: .1rem .5rem;
+}
+
+/* === About Me Page === */
+
+.about-top-box {
+  padding: 1rem;
+}
+
+.about-top-text {
+  margin: 0;
+}
+
+.about-top-img {
+  padding: 10px;
+  border-radius: 10px;
+  float: left;                                   /* Float: Left */
+}
+
+.about-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-bottom-box {
+  grid-row: 2;
+  flex-direction: column;
+  padding: .5rem;
+}
+
+.about-bottom-head {
+  grid-row: 1;
+  font-family: "Graduate", serif;
+  text-align: center;
+  margin: .5rem;
+}
+
+.about-bottom-title {
+  font-family: "Graduate", serif;
+  text-align: center;
+  margin: .4rem;
+}
+
+.about-bottom-text {
+  text-align: center;
+  margin: .4rem;
+}
+
+/* === Contact Me Page === */
+
+#contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contact-box form {
+  display: contents;                             /* Display: Contents */
+}
+
+#contact-box input,
+#contact-box textarea {
+  margin: 3px;
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(151, 151, 151);
+}
+
+#contact-box [type='submit'] {                   /* Attribute selector */
+  font-size: 1.1rem;
+  padding: 7px;
+}

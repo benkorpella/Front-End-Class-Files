@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
   <title>Resume - About</title>
 </head>
 <body>
   <aside>
-    <nav><ul>
+    <nav><ul id="nav-list">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/experience.html">Experience</a></li>
       <li><a href="/education.html">Education</a></li>
@@ -19,46 +20,32 @@
     <header><h1>About Me</h1></header>
 
     <!-- CONTENT -->
-    <section>
       <!-- About me blurb -->
-      <section>
-        <table> <!-- Using a table since display:grid is unavailable -->
-          <td>
-            <img src="images/headshot.jpeg" width="150" alt="Headshot of Ben">
-          </td>
-          <td>
-            <p>I was born in Springdale, Arkansas, and have spent my life in the neighboring city of Rogers. I graduated from the Don Tyson School of Innovation in the class of 2020, a significant milestone in my educational journey. Throughout my life, I've had a deep passion for coding, finding joy and fulfillment in the complexities and challenges it presents. Starting in first grade, I was a Boy Scout in Pack/Troop 107. I was constantly involved in scouting up. This included weekly meetings with my fellow scouts, weekend camping trips, and week-long summer camps. I also fulfilled the requirements to move up in rank and earn merit badges. This all culminated in achieving the Eagle Rank. In my free time, you can find me playing Baldur’s Gate 3 or Satisfactory, watching makers on YouTube, coding up my next project, or playing Dungeons and Dragons with my family and friends. </p>
-          </td>
-        </table>
+      <section class="item about-top-box">
+          
+          <p class="about-top-text"><img src="images/headshot.jpeg" width="150" alt="Headshot of Ben" class="about-top-img">I was born in Springdale, Arkansas, and have spent my life in the neighboring city of Rogers. I graduated from the Don Tyson School of Innovation in the class of 2020, a significant milestone in my educational journey. Throughout my life, I've had a deep passion for coding, finding joy and fulfillment in the complexities and challenges it presents. Starting in first grade, I was a Boy Scout in Pack/Troop 107. I was constantly involved in scouting up. This included weekly meetings with my fellow scouts, weekend camping trips, and week-long summer camps. I also fulfilled the requirements to move up in rank and earn merit badges. This all culminated in achieving the Eagle Rank. In my free time, you can find me playing Baldur’s Gate 3 or Satisfactory, watching makers on YouTube, coding up my next project, or playing Dungeons and Dragons with my family and friends. </p>
       </section>
-
-      <table>
-        <td>
-          <!-- Accomplishments -->
-          <section>
-            <h2>Accomplishments</h2>
-            <h3>Eagle Scout</h3>
-            <h4>November 2020</h4>
-            <p>The rank of Eagle Scout is the highest honor achievable in Scouts BSA. One of the requirements for Eagle is the Eagle Scout Service Project, in which a scout "demonstrates leadership of others while performing a project for the benefit of their community." My Eagle Project benefited CommpassionNWA and Feed The 479, a thrift store and food pantry, with 3 desks for their intake area. The desks consist of plywood, 2x4s, and laminated tops. During this project, I learned a lot about woodworking, but I learned more about leading a team, delegation, and project management.</p>
-          </section>
-        </td>
-
-        <td>
-          <!-- Volunteer Work -->
-          <section>
-            <h2>Volunteer Work</h2>
-            <h3>Cross Church Media Team</h3>
-            <h4>2015 to present</h4>
-            <p>Starting in eighth grade, I have been volunteering on the Media Team at Cross Church. I started on the Student Media team, where I would run lights using a Vista S3 board and occasionally graphics using ProPresenter 6. When I graduated High School, I started volunteering on the main Media Team, running lights on Sunday mornings with the grandMA full-size. A few years ago we upgraded to the grandMA3 compact XT board. I still volunteer weekly on Sundays and Tuesdays running lights for those services.</p>
-          </section>
-        </td>
-      </table>
-    </section>
+      <div class="about-bottom">
+        <!-- Accomplishments -->
+        <h1 class="about-bottom-head">Accomplishments</h1>
+        <section class="item about-bottom-box">
+          <h2 class="about-bottom-title">Eagle Scout - November 2020</h2>
+          <p class="about-bottom-text">The rank of Eagle Scout is the highest honor achievable in Scouts BSA. One of the requirements for Eagle is the Eagle Scout Service Project, in which a scout "demonstrates leadership of others while performing a project for the benefit of their community." My Eagle Project benefited CommpassionNWA and Feed The 479, a thrift store and food pantry, with 3 desks for their intake area. The desks consist of plywood, 2x4s, and laminated tops. During this project, I learned a lot about woodworking, but I learned more about leading a team, delegation, and project management.</p>
+        </section>
+        <!-- Volunteer Work -->
+        <h1 class="about-bottom-head">Volunteer Work</h1>
+        <section class="item about-bottom-box">
+          <h2 class="about-bottom-title">Cross Church Media Team - 2015 to present</h2>
+          <p class="about-bottom-text">Starting in eighth grade, I have been volunteering on the Media Team at Cross Church. I started on the Student Media team, where I would run lights using a Vista S3 board and occasionally graphics using ProPresenter 6. When I graduated High School, I started volunteering on the main Media Team, running lights on Sunday mornings with the grandMA full-size. A few years ago we upgraded to the grandMA3 compact XT board. I still volunteer weekly on Sundays and Tuesdays running lights for those services.</p>
+        </section>
+      </div>
+    </main>
 
     <!-- FOOTER -->
     <footer>
       <hr> <!-- Horizontal Rule to seperate main section from footer -->
-      <!-- GitHub Icon -->
+      <div class="footer-container">
+        <!-- GitHub Icon -->
         <a href="https://github.com/benkorpella" target="_blank">
           <img src="images/github-logo.svg" alt="GitHub logo" height="20">
         </a>
@@ -70,7 +57,7 @@
         <a href="mailto:benkorpella@gmail.com" target="_blank">
           <img src="images/envelope-at.svg" alt="Envelope icon" height="20">
         </a>
+      </div>
       </footer>
-  </main>
 </body>
 </html>

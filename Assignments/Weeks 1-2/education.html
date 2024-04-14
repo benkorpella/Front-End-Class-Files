@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
   <title>Resume - Education</title>
 </head>
 <body>
   <aside>
-    <nav><ul>
+    <nav><ul id="nav-list">
       <li><a href="/index.html">Home</a></li>
       <li><a href="/about.html">About Me</a></li>
       <li><a href="/experience.html">Experience</a></li>
@@ -20,66 +21,58 @@
 
     <!-- CONTENT -->
     <!-- IT Readiness -->
-    <section>
-      <hr> <!-- Horizontal Rule to seperate sections -->
-      <table> <!-- Using a table since display:grid is unavailable -->
-        <td>
-          <img src="images/uofa-glogal-campus-logo.jpg" width="150" alt="Haven Logo">
-        </td>
-        <td>
-          <h2>University of Arkansas Global Campus</h2>
-          <h3>April 2021 - Certificate of Completion</h3>
-          <h4>IT Readiness - Back-End Web Development</h4>
-          <ul> <!-- Job Description -->
-            <li>Skills Covered:</li>
-            <ul>
-              <li>Node.js</li>
-              <li>Express.js</li>
-              <li>MongoDB with Mongoose</li>
-              <li>Heroku</li>
-            </ul>
+    <section class="item">
+      <img src="images/uofa-glogal-campus-logo.png" width="150" alt="Haven Logo">
+      <div>
+        <h2>University of Arkansas Global Campus</h2>
+        <h3>April 2021 - Certificate of Completion</h3>
+        <h4>IT Readiness - Back-End Web Development</h4>
+        <ul> <!-- Job Description -->
+          <li>Skills Covered:</li>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>MongoDB with Mongoose</li>
+            <li>Heroku</li>
           </ul>
-        </td>
-      </table>
+        </ul>
+      </div>
     </section>
 
     <!-- High School -->
-    <section>
-      <hr> <!-- Horizontal Rule to seperate sections -->
-      <table> <!-- Using a table since display:grid is unavailable -->
-        <td>
-          <img src="images/soi-logo.png" width="150" alt="School of Innovation Logo">
-        </td>
-        <td>
-          <h2>Don Tyson School of Innovation</h2>
-          <h3>May 2020 - High School Diploma</h3>
+    <section class="item">
+      <img src="images/soi-logo.png" width="150" alt="School of Innovation Logo">
+      <div>
+        <h2>Don Tyson School of Innovation</h2>
+        <h3>May 2020 - High School Diploma</h3>
+        <ul>
+          <li>Relevent Coursework:</li>
           <ul>
-            <li>Relevent Coursework:</li>
-            <ul>
-              <li>Computer Science Programming Level 1 & 2</li>
-              <li>Graphic Design 1</li>
-            </ul>
+            <li>Computer Science Programming Level 1 & 2</li>
+            <li>Graphic Design 1</li>
           </ul>
-        </td>
-      </table>
+        </ul>
+      </div>
     </section>
+  </main>
 
     <!-- FOOTER -->
     <footer>
       <hr> <!-- Horizontal Rule to seperate main section from footer -->
-      <!-- GitHub Icon -->
-      <a href="https://github.com/benkorpella" target="_blank">
-        <img src="images/github-logo.svg" alt="GitHub logo" height="20">
-      </a>
-      <!-- LinkedIn Icon -->
-      <a href="https://www.linkedin.com/in/ben-korpella/" target="_blank">
-        <img src="images/linkedin-logo.svg" alt="LinkedIn logo" height="20">
-      </a>
-      <!-- Envelope Icon -->
-      <a href="mailto:benkorpella@gmail.com" target="_blank">
-        <img src="images/envelope-at.svg" alt="Envelope icon" height="20">
-      </a>
+      <div class="footer-container">
+        <!-- GitHub Icon -->
+        <a href="https://github.com/benkorpella" target="_blank">
+          <img src="images/github-logo.svg" alt="GitHub logo" height="20">
+        </a>
+        <!-- LinkedIn Icon -->
+        <a href="https://www.linkedin.com/in/ben-korpella/" target="_blank">
+          <img src="images/linkedin-logo.svg" alt="LinkedIn logo" height="20">
+        </a>
+        <!-- Envelope Icon -->
+        <a href="mailto:benkorpella@gmail.com" target="_blank">
+          <img src="images/envelope-at.svg" alt="Envelope icon" height="20">
+        </a>
+      </div>
     </footer>
-  </main>
 </body>
 </html>
